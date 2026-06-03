@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Complete Exercises</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons (FIXED) -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body class="bg-light">
+
+<!-- ========================= 1.1 & 1.2 ========================= -->
+<div class="container mt-5">
+    <h1 class="text-center text-primary display-4">
+        Local Community Event Portal
+    </h1>
+    <p class="lead text-center">
+        Bootstrap Connected Successfully
+    </p>
+</div>
+
+<!-- ========================= 2.1 ========================= -->
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="text-success">Bootstrap Folder Structure</h2>
+        <ul class="list-group mt-3">
+            <li class="list-group-item">CSS Folder → Styling</li>
+            <li class="list-group-item">JS Folder → Components</li>
+            <li class="list-group-item">Icons Folder → Bootstrap Icons</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ========================= 2.2 MODAL ========================= -->
+<div class="container text-center mt-5">
+
+    <button class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal">
+
+        Open Modal
+
+    </button>
+
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Bootstrap Modal</h5>
+
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <div class="modal-body">
+                Bootstrap JavaScript Working Successfully
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= 3.1 GRID ========================= -->
+<div class="container mt-5">
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow">
+                <img src="images/event1.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h4>Music Festival</h4>
+                    <button class="btn btn-success">Register</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow">
+                <img src="images/event2.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h4>Food Carnival</h4>
+                    <button class="btn btn-warning">Register</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow">
+                <img src="images/event3.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h4>Sports Meet</h4>
+                    <button class="btn btn-danger">Register</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= 4.1 TWO COLUMN ========================= -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-3 bg-dark text-white p-4">
+            <h4>Sidebar</h4>
+            <ul>
+                <li>Home</li>
+                <li>Events</li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+
+        <div class="col-md-9 bg-white p-4">
+            <h3>Main Content Area</h3>
+            <p>Event information and updates.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= 4.2 FOUR COLUMN ========================= -->
+<div class="container mt-5">
+
+    <div class="row text-center">
+
+        <div class="col-sm-3 bg-primary text-white p-4">Column 1</div>
+        <div class="col-sm-3 bg-success text-white p-4">Column 2</div>
+        <div class="col-sm-3 bg-warning p-4">Column 3</div>
+        <div class="col-sm-3 bg-danger text-white p-4">Column 4</div>
+
+    </div>
+
+</div>
+
+<!-- ========================= FLEX NAVBAR ========================= -->
+<div class="container mt-5">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center bg-dark p-4">
+
+        <h2 class="text-white">Community Portal</h2>
+
+        <div>
+            <button class="btn btn-light m-2">Home</button>
+            <button class="btn btn-light m-2">Events</button>
+            <button class="btn btn-light m-2">Contact</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= FORMS ========================= -->
+<div class="container mt-5">
+
+    <div class="card p-4 shadow">
+
+        <h3>Registration Form</h3>
+
+        <form>
+            <input class="form-control mb-3" placeholder="Enter Name">
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Accept Terms</label>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ========================= ICONS ========================= -->
+<div class="container mt-5 text-center">
+
+    <h2>Social Media Icons</h2>
+
+    <i class="bi bi-facebook fs-1 text-primary m-3"></i>
+    <i class="bi bi-instagram fs-1 text-danger m-3"></i>
+    <i class="bi bi-youtube fs-1 text-danger m-3"></i>
+
+</div>
+
+<!-- ========================= ACCORDION ========================= -->
+<div class="container mt-5 mb-5">
+
+    <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+                <button class="accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+
+                    Music Festival
+
+                </button>
+            </h2>
+
+            <div id="collapseOne"
+                 class="accordion-collapse collapse show">
+
+                <div class="accordion-body">
+                    Live music performances.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= FOOTER FIXED ========================= -->
+<div class="container mt-5 mb-5">
+    <div class="text-center bg-dark text-white p-3">
+        Fixed Footer Example (Now Safe)
+    </div>
+</div>
+
+<!-- Bootstrap JS (IMPORTANT) -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

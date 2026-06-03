@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+          href="styles.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Community Event Portal</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#promoVideo">Promo Video</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="help.html" target="_blank">Help</a></li>
+        </ul>
+    </nav>
+    <div id="mainHeader">
+        <h1>Welcome Residents!</h1>
+        <p>
+            Register for exciting community programs and activities.
+        </p>
+        <p>
+            <span style="color: yellow; font-weight: bold;">
+                Special Offer:
+            </span>
+            Free entry for first-time participants!
+        </p>
+    </div>
+    <section id="home">
+
+    <p class="hiddenBox">
+        This uses visibility hidden.
+    </p>
+
+    <p class="noneBox">
+        This uses display none.
+    </p>
+
+    <h2>Welcome to the Community Portal</h2>
+
+    <p>
+        Residents can register for local events and community services.
+    </p>
+
+</section>
+<section id="events">
+
+    <h2>Upcoming Events</h2>
+
+
+
+    <!-- CATEGORY FILTER -->
+
+    <select id="categoryFilter">
+
+        <option value="All">
+
+            All Categories
+
+        </option>
+
+        <option value="Music">
+
+            Music
+
+        </option>
+
+        <option value="Food">
+
+            Food
+
+        </option>
+
+        <option value="Sports">
+
+            Sports
+
+        </option>
+
+    </select>
+
+
+
+    <!-- SEARCH BOX -->
+
+    <input type="text"
+           id="searchBox"
+           placeholder="Search Event Name">
+
+
+
+    <!-- LOADING MESSAGE -->
+
+    <div id="loading">
+
+        Loading Events...
+
+    </div>
+
+
+
+    <!-- EVENTS WILL DISPLAY HERE -->
+
+    <div id="eventContainer"></div>
+
+</section>
+    <section id="gallery">
+        <table>
+            <caption>Community Event Gallery</caption>
+            <tr>
+
+    <td class="eventCard">
+
+        <img src="images/event1.jpg"
+             alt="Music Festival"
+             title="Music Festival"
+             class="eventImage"
+             ondblclick="enlargeImage(this)">
+
+        <p>Music Festival</p>
+
+    </td>
+
+    <td class="eventCard">
+
+        <img src="images/event2.jpg"
+             alt="Food Carnival"
+             title="Food Carnival"
+             class="eventImage"
+             ondblclick="enlargeImage(this)">
+
+        <p>Food Carnival</p>
+
+    </td>
+
+    <td class="eventCard">
+
+        <img src="images/event3.jpg"
+             alt="Sports Event"
+             title="Sports Event"
+             class="eventImage"
+             ondblclick="enlargeImage(this)">
+
+        <p>Sports Meet</p>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td class="eventCard">
+
+        <img src="images/event4.jpg"
+             alt="Tree Plantation"
+             title="Tree Plantation"
+             class="eventImage"
+             ondblclick="enlargeImage(this)">
+
+        <p>Tree Plantation</p>
+
+    </td>
+
+    <td class="eventCard">
+
+        <img src="images/event5.jpg"
+             alt="Art Exhibition"
+             title="Art Exhibition"
+             class="eventImage"
+             ondblclick="enlargeImage(this)">
+
+        <p>Art Exhibition</p>
+
+    </td>
+
+    <td class="eventCard">
+
+        <img src="images/event6.jpg"
+             alt="Charity Run"
+             title="Charity Run"
+             class="eventImage"
+             ondblclick="enlargeImage(this)">
+
+        <p>Charity Run</p>
+
+    </td>
+
+</tr>
+        </table>
+    </section>
+    <section id="registration">
+        <div class="form-container">
+            <h2>Event Registration Form</h2>
+<form id="registrationForm">
+
+    <label for="name">
+
+        Full Name
+
+    </label>
+
+    <input type="text"
+           id="name"
+           name="name"
+           placeholder="Enter your full name">
+
+    <small id="nameError"></small>
+
+
+
+    <label for="email">
+
+        Email Address
+
+    </label>
+
+    <input type="email"
+           id="email"
+           name="email"
+           placeholder="Enter your email">
+
+    <small id="emailError"></small>
+
+
+
+    <label for="eventSelect">
+
+        Select Event
+
+    </label>
+
+    <select id="eventSelect"
+            name="eventSelect">
+
+        <option value="">
+
+            -- Select Event --
+
+        </option>
+
+        <option value="Music Festival">
+
+            Music Festival
+
+        </option>
+
+        <option value="Food Carnival">
+
+            Food Carnival
+
+        </option>
+
+        <option value="Sports Meet">
+
+            Sports Meet
+
+        </option>
+
+    </select>
+
+    <small id="eventError"></small>
+
+
+
+    <button type="submit"
+            id="registerBtn">
+
+        Register Now
+
+    </button>
+
+
+
+    <p id="formMessage"></p>
+
+</form>
+
+        </div>
+    </section>
+    <section id="feedback">
+        <div class="form-container">
+            <h2>Event Feedback</h2>
+            <label for="feedbackText">
+                Share Your Feedback
+            </label>
+            <textarea id="feedbackText"
+                      rows="5"
+                      placeholder="Type your feedback here..."
+                      onkeyup="countCharacters()"></textarea>
+            <p>
+                Characters Typed:
+                <span id="charCount">0</span>
+            </p>
+        </div>
+    </section>
+    <section id="promoVideo">
+        <div class="grand-video-container">
+            <h2 class="video-heading">
+                ✨ Grand Community Celebration 2026 ✨
+            </h2>
+            <p class="video-subtitle">
+                Experience Music • Sports • Culture • Community Unity
+            </p>
+
+            <video controls
+                   oncanplay="videoReady()"
+                   class="promo-video">
+
+                <source src="videos/promo.mp4"
+                        type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+            <p id="videoMessage"></p>
+
+        </div>
+
+    </section>
+    <section id="location">
+        <div class="form-container">
+            <h2>Find Nearby Events</h2>
+            <p>
+                Click the button below to detect your location.
+            </p>
+            <button onclick="findLocation()">
+                Find Nearby Events
+            </button>
+            <p id="locationResult"></p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: community@cityportal.com</p>
+    </section>
+<section id="news">
+
+    <h2>Community Bulletin</h2>
+
+    <div class="newsArticle">
+
+        <p>
+            The Local Community Event Portal continues to
+            bring residents together through cultural
+            celebrations, environmental awareness programs,
+            sports competitions, and educational workshops.
+            Citizens are encouraged to participate actively
+            in upcoming events to strengthen community
+            relationships and improve local engagement.
+
+            This year’s special events include music
+            festivals, food carnivals, charity marathons,
+            art exhibitions, and tree plantation drives.
+            Residents can register online and receive
+            instant updates regarding schedules and venue
+            information.
+
+            The city council aims to provide better digital
+            accessibility and improve public interaction
+            through this community platform.
+        </p>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2026 Local City Council</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

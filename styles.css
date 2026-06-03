@@ -1,0 +1,548 @@
+/* =========================
+   UNIVERSAL SELECTOR
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY STYLES
+========================= */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #e6ecf2;
+
+    background-image: url("images/citybg.jpg");
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVIGATION STYLES
+========================= */
+
+nav {
+
+    background-color: rgba(0, 51, 102, 0.9);
+
+    padding: 15px;
+}
+
+nav h1 {
+
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+nav ul {
+
+    list-style-type: none;
+
+    list-style-position: inside;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding: 0;
+}
+
+nav ul li {
+
+    padding: 8px;
+
+    margin: 5px;
+}
+
+/* =========================
+   LINK STYLES
+========================= */
+
+a:link {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: yellow;
+
+    text-decoration: underline;
+}
+
+a:active {
+
+    color: red;
+}
+
+a:visited {
+
+    color: lightgray;
+}
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+#mainHeader {
+
+    background: linear-gradient(to right,
+        #0077cc,
+        #003366);
+
+    color: white;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+/* =========================
+   ELEMENT SELECTOR
+========================= */
+
+h2 {
+
+    background: linear-gradient(to right,
+        #003366,
+        #0077cc);
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   GROUPING SELECTOR
+========================= */
+
+h3,
+p {
+
+    line-height: 1.8;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+/* =========================
+   HIGHLIGHT CLASS
+========================= */
+
+.highlight {
+
+    background-color: yellow;
+
+    font-weight: bold;
+
+    padding: 5px;
+}
+
+/* =========================
+   SECTION STYLES
+========================= */
+
+section {
+
+    padding: 40px;
+}
+
+/* =========================
+   TABLE STYLES
+========================= */
+
+table { width: 90%; margin: auto; border-collapse: collapse; background-color: rgba(255,255,255,0.9); } /* Table Heading */ th { border: 2px solid #003366; padding: 15px; background-color: #003366; color: white; text-align: center; } /* Table Data */ td { border: 2px solid #003366; padding: 20px; text-align: center; } /* Zebra Striping */ tr:nth-child(even) { background-color: #d9e6f2; }
+
+caption {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    color: #003366;
+}
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.eventCard { background-color: rgba(255,255,255,0.9); border: 3px solid #003366; padding: 20px; margin: 20px; border-radius: 15px; box-shadow: 0px 0px 15px rgba(0,0,0,0.2); text-align: center; }
+.hiddenBox {
+
+    visibility: hidden;
+}
+
+.noneBox {
+
+    display: none;
+}
+/* =========================
+   EVENT IMAGE STYLES
+========================= */
+
+.eventImage {
+
+    width: 250px;
+
+    height: 170px;
+
+    border: 4px solid #003366;
+
+    border-radius: 10px;
+
+    padding: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.eventImage:hover {
+
+    transform: scale(1.05);
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.form-container {
+
+    width: 60%;
+
+    margin: auto;
+
+    background-color: rgba(255,255,255,0.95);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 15px gray;
+}
+
+/* =========================
+   LABEL STYLES
+========================= */
+
+label {
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+/* =========================
+   INPUT STYLES
+========================= */
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 8px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #003366;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline: 3px solid #ff9900;
+
+    background-color: #fff8e6;
+}
+
+/* =========================
+   BUTTON STYLES
+========================= */
+
+button {
+
+    background-color: #007BFF;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    background-color: #0056b3;
+
+    transform: scale(1.05);
+}
+
+/* =========================
+   OUTPUT MESSAGE
+========================= */
+
+output {
+
+    display: block;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color: green;
+
+    font-size: 18px;
+}
+
+/* =========================
+   VIDEO SECTION
+========================= */
+
+.grand-video-container {
+
+    background: linear-gradient(to right,
+        #001f4d,
+        #0077cc);
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    margin: 40px;
+
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+}
+
+.video-heading {
+
+    color: white;
+
+    font-size: 40px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+.video-subtitle {
+
+    color: #ffeb99;
+
+    font-size: 22px;
+
+    margin-bottom: 30px;
+
+    font-style: italic;
+}
+
+.promo-video {
+
+    width: 80%;
+
+    border: 6px solid white;
+
+    border-radius: 20px;
+}
+
+/* =========================
+   FOOTER STYLES
+========================= */
+
+footer {
+
+    background-color: #003366;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 18px;
+}
+.newsArticle {
+
+    column-count: 2;
+
+    column-gap: 30px;
+
+    column-rule: 1px solid gray;
+
+    background-color: rgba(255,255,255,0.9);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin: 30px;
+}
+/* ========================= RESPONSIVE WEB DESIGN ========================= */ @media screen and (max-width: 768px) { /* Navigation vertically */ nav ul { flex-direction: column; align-items: center; } /* Responsive heading sizes */ h1 { font-size: 6vw; } h2 { font-size: 5vw; } p { font-size: 3.5vw; } /* Responsive images */ .eventImage { width: 90%; height: auto; } /* Responsive form */ .form-container { width: 95%; } /* Responsive video */ .promo-video { width: 100%; } /* Responsive table */ table { width: 100%; } /* Single-column news layout */ .newsArticle { column-count: 1; } /* Event cards stack properly */ .eventCard { display: block; width: 100%; } }
+
+
+/* =========================
+   DYNAMIC EVENT CARDS
+========================= */
+
+.dynamicEventCard {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px gray;
+
+    text-align: center;
+
+}
+
+.dynamicEventCard h3 {
+
+    color: #003366;
+
+    font-size: 24px;
+
+}
+
+.dynamicEventCard p {
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+
+}
+
+.dynamicEventCard button {
+
+    margin: 10px;
+
+}
+
+
+/* =========================
+   FILTER & SEARCH SECTION
+========================= */
+
+#categoryFilter,
+#searchBox {
+
+    width: 40%;
+
+    padding: 12px;
+
+    margin: 15px;
+
+    border-radius: 10px;
+
+    border: 2px solid #003366;
+
+    font-size: 16px;
+
+}
+
+
+
+/* =========================
+   LOADING SPINNER
+========================= */
+
+#loading {
+
+    display: none;
+
+    font-size: 24px;
+
+    color: #003366;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   FORM ERROR STYLES
+========================= */
+
+small {
+
+    color: red;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+}
+
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+#formMessage {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    color: green;
+
+}
+
